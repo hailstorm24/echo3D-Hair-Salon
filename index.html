@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Echo3D Hair Salon</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            #background {
+                top: 0;
+                left: 0;
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                background-color: #000000;
+                z-index: -1;
+            }
+            h1 {
+                position: relative;
+                /* color: white; */
+                color: #60dcff;
+                text-align: center;
+                font-size: 5vh;
+		            font-family: Verdana, Tahoma, sans-serif;
+            }
+            h2{
+                position: relative;
+                /* color: white; */
+                color: #60dcff;
+                text-align: center;
+                font-size: 3vh;
+		            font-family: Verdana, Tahoma, sans-serif;
+            }
+            iframe {
+                margin: 0px 100px;
+                position: relative;
+                width: 100%;
+                height: 75vh;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="background"></div>
+        <h1>
+            Echo3D Hair Salon!
+        </h1>
+        <h2>
+            Use the buttons below to try on different hairstyles!
+        </h2>
+        <div class="container">
+            <button onclick="nextStyle()" type="button">Change Style</button>
+            <button onclick=" nextColor()" type="button">Change Color</button>
+        </div>
+        <iframe id = "api" src="https://api.echo3D.co/facear?key=cool-leaf-2265&entry=44ba89e0-1860-4649-8af3-a12ae2561696" allow="camera *" ></iframe>
+            <!-- change iframe here -->
+        <script>
+            console.log("test");
+       </script>
+    </body>
+</html>
